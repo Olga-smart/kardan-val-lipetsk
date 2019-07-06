@@ -1,9 +1,11 @@
 /* General */
 :root {
 	--accent-color: #e40613;
+	--accent-color-dark: #b90510;
 	--dark-grey: #212020;
-	--medium-grey: #838080;
-	--light-grey: #e4e0e0;
+	--medium-grey: #2e2d2d;
+	--light-grey: #838080;
+	--very-light-grey: #e4e0e0;
 }
 body {
 	font-family: 'Roboto', sans-serif;
@@ -12,15 +14,21 @@ body {
 h1, h2, h3, h4, h5, h6, .btn {
 	font-family: 'Play', sans-serif;
 }
+a {
+	color: var(--accent-color);
+}
+a:hover {
+	color: var(--accent-color-dark);
+}
 section {
-	min-height: 700px;
+/*	min-height: 700px;*/
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
 .section-heading {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 .section-heading:before,
 .section-heading:after {
@@ -164,7 +172,7 @@ header .btn:hover {
 }
 .services-item p {
 	font-size: 0.8rem;
-	color: var(--medium-grey);
+	color: var(--light-grey);
 }
 .services-item {
 	padding-top: 100px;
@@ -174,25 +182,25 @@ header .btn:hover {
 }
 .services-item-1 {
 	background-image: url(../img/balance.png);
-	border-right: 1px solid var(--light-grey);
-	border-bottom: 1px solid var(--light-grey);
+	border-right: 1px solid var(--very-light-grey);
+	border-bottom: 1px solid var(--very-light-grey);
 }
 .services-item-2 {
 	background-image: url(../img/exchange.png);
-	border-right: 1px solid var(--light-grey);
-	border-bottom: 1px solid var(--light-grey);
+	border-right: 1px solid var(--very-light-grey);
+	border-bottom: 1px solid var(--very-light-grey);
 }
 .services-item-3 {
 	background-image: url(../img/exchange.png);
-	border-bottom: 1px solid var(--light-grey);
+	border-bottom: 1px solid var(--very-light-grey);
 }
 .services-item-4 {
 	background-image: url(../img/improvement.png);
-	border-right: 1px solid var(--light-grey);
+	border-right: 1px solid var(--very-light-grey);
 }
 .services-item-5 {
 	background-image: url(../img/ruler.png);
-	border-right: 1px solid var(--light-grey);
+	border-right: 1px solid var(--very-light-grey);
 }
 .services-item-6 {
 	background-image: url(../img/ruler.png);
@@ -200,7 +208,69 @@ header .btn:hover {
 /* End Services */
 
 /* Price */
-.price .car {
-	background-image: url(../img/)
+.price .price-item {
+	height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.price .price-item-1 {
+	background-image: url(../img/car.jpg);
+}
+.price .price-item-2 {
+	background-image: url(../img/bus.jpg);
+}
+.price .price-item-3 {
+	background-image: url(../img/truck.jpg);
+}
+.price .price-item-text {
+	color: #fff;
+/*	text-transform: uppercase;*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	padding-left: 15px;
+	font-weight: 500;
+	transition: all 0.4s ease-out;
+	font-family: 'Play', sans-serif;
+}
+.price .price-item-text span {
+	font-size: 1.6rem;
+}
+.price .price-item-1,
+.price .price-item-3 {
+	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+}
+.price .price-item-2 {
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+}
+.price .price-item-1 .price-item-text,
+.price .price-item-3 .price-item-text {
+	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+	background-color: rgba(228,6,19,0.8);
+	background-color: rgba(33,32,32,0.8);
+}
+.price .price-item-2 .price-item-text {
+	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+	clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+	background-color: rgba(185,5,16,0.8);
+	background-color: rgba(46,45,45,0.8);
+	
+}
+.price .price-link {
+	display: block;
+	margin-top: 5rem;
+	position: relative;
+	padding: 1rem;
+	border-top: 1px solid var(--very-light-grey);
+	border-bottom: 1px solid var(--very-light-grey);
+	text-transform: uppercase;
 }
 /* End Price */

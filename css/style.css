@@ -28,7 +28,7 @@ section {
 .section-heading {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 4rem;
+	margin-bottom: 5rem;
 }
 .section-heading:before,
 .section-heading:after {
@@ -274,3 +274,28 @@ header .btn:hover {
 	text-transform: uppercase;
 }
 /* End Price */
+
+/* Contacts */
+.contacts .contacts-item {
+	padding-top: 80px;
+	padding-bottom: 20px;
+	background-position: top 30px center;
+	background-repeat: no-repeat;
+	background-size: 30px;
+}
+.contacts .contacts-address {
+	background-image: url(../img/address.png);
+	border-right: 1px solid var(--very-light-grey);
+}
+.contacts .contacts-phone {
+	background-image: url(../img/phone.png);
+	border-right: 1px solid var(--very-light-grey);
+}
+.contacts .contacts-mail {
+	background-image: url(../img/email.png);
+	border-right: 1px solid var(--very-light-grey);
+}
+.contacts .contacts-schedule {
+	background-image: url(../img/clock.png);
+}
+/* End Contacts */

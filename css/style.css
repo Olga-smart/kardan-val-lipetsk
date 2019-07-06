@@ -1,0 +1,206 @@
+/* General */
+:root {
+	--accent-color: #e40613;
+	--dark-grey: #212020;
+	--medium-grey: #838080;
+	--light-grey: #e4e0e0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, .btn {
+	font-family: 'Play', sans-serif;
+}
+section {
+	min-height: 700px;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.section-heading {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 3rem;
+}
+.section-heading:before,
+.section-heading:after {
+	position: absolute;
+	content: "";
+	display: block;
+	background-color: var(--accent-color);
+	bottom: -5px;
+	right: 0;
+}
+.section-heading:before {
+	height: 1px;
+	width: 500px;
+	bottom: -5px;
+	right: 0;
+}
+.section-heading:after {
+	height: 60px;
+	width: 1px;
+	transform-origin: bottom;
+	transform: rotate(45deg);
+	
+}
+/* End General */
+
+/* Navbar */
+.navbar {
+	padding: 0;
+	font-family: 'Play', sans-serif;
+}
+.navbar .navbar-brand {
+	background-color: var(--accent-color);
+	color: #fff;
+	padding: 0.5rem 1rem;
+	line-height: 100%;
+	font-family: 'Play', sans-serif;
+	position: relative;
+}
+.navbar .navbar-brand:after {
+	position: absolute;
+	content: "";
+	display: block;
+	left: 100%;
+	top: 0;
+	border-top: 20px solid var(--accent-color);
+	border-left: 20px solid var(--accent-color);
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+.navbar .navbar-brand:hover {
+	color: #fff;
+}
+.navbar .navbar-text {
+	background-color: var(--dark-grey);
+	padding: 0.5rem 1rem;
+	position: relative;
+}
+.navbar .navbar-text:before {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	left: -40px;
+	border-top: 20px solid transparent;
+	border-right: 20px solid var(--dark-grey);
+	border-bottom: 20px solid var(--dark-grey);
+	border-left: 20px solid transparent;
+}
+.navbar .navbar-text a {
+	color: #fff;
+}
+/* End Navbar */
+
+/* Header */
+header {
+	background-image: url(../img/main-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+}
+header h1 {
+	margin-top: 30vh;
+}
+header .btn {
+	background-color: var(--accent-color);
+	color: #fff;
+	border-radius: 0;
+	margin-top: 5vh;
+	position: relative;
+}
+header .btn:before,
+header .btn:after {
+	position: absolute;
+	content: "";
+	display: block;
+	top: -1px;
+}
+header .btn:before {
+	border-top: 24px solid transparent;
+	border-right: 24px solid var(--accent-color);
+	border-bottom: 24px solid var(--accent-color);
+	border-left: 24px solid transparent;
+	left: -49px;
+}
+header .btn:after {
+	border-top: 24px solid var(--accent-color);
+	border-right: 24px solid transparent;
+	border-bottom: 24px solid transparent;
+	border-left: 24px solid var(--accent-color);
+	left: calc(100% + 1px);
+}
+header .btn:hover {
+	color: #fff;
+}
+/* End Header */
+
+/* Services */
+.services h3 {
+	font-size: 1.2rem;
+	position: relative;
+	margin-bottom: 2rem;
+}
+.services h3:after,
+.services h3:before {
+	position: absolute;
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: var(--accent-color);
+}
+.services h3:before {
+	width: 60px;	
+	bottom: -10px;
+	left: calc(50% - 30px); 	
+}
+.services h3:after {
+	width: 40px;	
+	bottom: -15px;
+	left: calc(50% - 20px); 	
+}
+.services-item p {
+	font-size: 0.8rem;
+	color: var(--medium-grey);
+}
+.services-item {
+	padding-top: 100px;
+	background-position: top 30px center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+}
+.services-item-1 {
+	background-image: url(../img/balance.png);
+	border-right: 1px solid var(--light-grey);
+	border-bottom: 1px solid var(--light-grey);
+}
+.services-item-2 {
+	background-image: url(../img/exchange.png);
+	border-right: 1px solid var(--light-grey);
+	border-bottom: 1px solid var(--light-grey);
+}
+.services-item-3 {
+	background-image: url(../img/exchange.png);
+	border-bottom: 1px solid var(--light-grey);
+}
+.services-item-4 {
+	background-image: url(../img/improvement.png);
+	border-right: 1px solid var(--light-grey);
+}
+.services-item-5 {
+	background-image: url(../img/ruler.png);
+	border-right: 1px solid var(--light-grey);
+}
+.services-item-6 {
+	background-image: url(../img/ruler.png);
+}
+/* End Services */
+
+/* Price */
+.price .car {
+	background-image: url(../img/)
+}
+/* End Price */

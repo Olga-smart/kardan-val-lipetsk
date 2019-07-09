@@ -390,14 +390,12 @@ header .btn:active:after {
 .price .price-item-1 .price-item-text,
 .price .price-item-3 .price-item-text {
 	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-	background-color: rgba(228,6,19,0.8);
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 	background-color: rgba(33,32,32,0.8);
 }
 .price .price-item-2 .price-item-text {
 	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
 	clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
-	background-color: rgba(185,5,16,0.8);
 	background-color: rgba(46,45,45,0.8);
 	
 }
@@ -411,6 +409,23 @@ header .btn:active:after {
 	text-transform: uppercase;
 }
 /* End Price */
+
+/* Media Price */
+@media (max-width: 767px) {
+	.price .price-item:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+	.price .price-item-2 {
+		-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+	}
+	.price .price-item-2 .price-item-text {
+		-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+		background-color: rgba(33,32,32,0.8);
+	}
+}
+/* End Media Price */
 
 /* Contacts */
 .contacts .contacts-item {

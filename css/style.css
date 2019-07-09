@@ -324,7 +324,24 @@ header .btn:active:after {
 /* End Services */
 
 /* Media Services */
-
+@media (min-width: 576px) and (max-width: 767px) {
+	.services-item-2 {
+		border-right: none;
+	}
+	.services-item-3 {
+		border-right: 1px solid var(--very-light-grey);
+	}
+	.services-item-4 {
+		border-right: none;
+		border-bottom: 1px solid var(--very-light-grey);
+	}
+} 
+@media (max-width: 575px) {
+	.services-item:not(:last-child) {
+		border-right: none;
+		border-bottom: 1px solid var(--very-light-grey);
+	}
+} 
 /* End Media Services */
 
 /* Price */

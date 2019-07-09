@@ -450,4 +450,31 @@ header .btn:active:after {
 .contacts .contacts-schedule {
 	background-image: url(../img/clock.png);
 }
+.contacts a {
+	color: inherit;
+}
 /* End Contacts */
+
+/* Media Contacts */
+@media (min-width: 576px) and (max-width: 767px) {
+	.contacts .contacts-phone {
+		border-right: none;
+	}
+	.contacts .contacts-address,
+	.contacts .contacts-phone {
+		border-bottom: 1px solid var(--very-light-grey);
+	}
+}
+@media (max-width: 575px) {
+	.contacts .contacts-item {
+		padding-top: 0;
+		padding-left: 60px;
+		padding-bottom: 20px;
+		background-position: top left 30px;
+		background-repeat: no-repeat;
+		background-size: 20px;
+		text-align: left;
+		border: none;
+	}
+}
+/* End Media Contacts */

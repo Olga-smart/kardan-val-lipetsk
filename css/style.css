@@ -212,6 +212,7 @@ header .btn {
 	border-radius: 0;
 	margin-top: 5vh;
 	position: relative;
+	transition: all ease-out 0.5s;
 }
 header .btn:before,
 header .btn:after {
@@ -219,6 +220,7 @@ header .btn:after {
 	content: "";
 	display: block;
 	top: -1px;
+	transition: all ease-out 0.5s;
 }
 header .btn:before {
 	border-top: 24px solid transparent;
@@ -234,8 +236,21 @@ header .btn:after {
 	border-left: 24px solid var(--accent-color);
 	left: calc(100% + 1px);
 }
-header .btn:hover {
+header .btn:hover,
+header .btn:active {
 	color: #fff;
+	letter-spacing: 2px;
+	background-color: var(--accent-color-dark);
+}
+header .btn:hover:before,
+header .btn:active:before {
+	border-right-color: var(--accent-color-dark);
+	border-bottom-color: var(--accent-color-dark);
+}
+header .btn:hover:after,
+header .btn:active:after {
+	border-top-color: var(--accent-color-dark);
+	border-left-color: var(--accent-color-dark);
 }
 /* End Header */
 
@@ -245,7 +260,6 @@ header .btn:hover {
 		margin-top: 10vh;
 	}
 }	
-
 /* End Media Header */
 
 /* Services */
@@ -308,6 +322,10 @@ header .btn:hover {
 	background-image: url(../img/ruler.png);
 }
 /* End Services */
+
+/* Media Services */
+
+/* End Media Services */
 
 /* Price */
 .price .price-item {

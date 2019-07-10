@@ -20,8 +20,8 @@ a {
 a:hover {
 	color: var(--accent-color-dark);
 }
-section {
-/*	min-height: 700px;*/
+section,
+footer {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
@@ -478,3 +478,75 @@ header .btn:active:after {
 	}
 }
 /* End Media Contacts */
+
+/* Footer */
+footer {
+	background-color: var(--dark-grey);
+	background-image: url(../img/footer-bg.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	color: var(--very-light-grey);
+	color: rgba(255,255,255,0.8);
+	font-size: 0.9rem;
+}
+footer .footer-heading {
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #fff;
+}
+footer .navbar-brand {
+	color: inherit;
+	color: #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 1.5rem;
+}
+footer a {
+	color: inherit;
+}
+footer .navbar-nav a {
+	color: inherit;
+	padding: 0.2rem 0.5rem;
+}
+footer .navbar-nav a:hover {
+	color: #fff;
+}
+footer .menu,
+footer .call-us,
+footer .come-to-us {
+	padding-top: 40px;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: top left 15px;
+}
+footer .menu {
+	background-image: url(../img/list.png);
+}
+footer .call-us {
+	background-image: url(../img/telephone.png);
+}
+footer .come-to-us {
+	background-image: url(../img/geo.png);
+}
+/* End Footer */
+
+/* Media Footer */
+@media (max-width: 575px) {
+	footer .menu,
+	footer .call-us,
+	footer .come-to-us {
+		padding-top: 0;
+		padding-left: 65px;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		background-position: top left 30px;
+	}
+	footer .menu,
+	footer .call-us {
+		margin-bottom: 30px;
+	}
+}
+/* End Media Footer */

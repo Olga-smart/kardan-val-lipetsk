@@ -29,6 +29,7 @@ footer {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 5rem;
+	font-size: 2rem;
 }
 .section-heading:before,
 .section-heading:after {
@@ -113,9 +114,6 @@ footer {
 .navbar .navbar-text span {
 	color: rgba(255,255,255,0.5);
 }
-.navbar .navbar-toggler-icon {
-	background-image: url(../img/menu.png);
-}
 /* End Navbar */
 
 /* Media Navbar */
@@ -123,7 +121,6 @@ footer {
 	.navbar {
 		padding-right: 1rem;
 		background-color: transparent !important;
-		background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
 	}
 	.navbar .navbar-brand {
 		margin-right: 58px;
@@ -148,9 +145,6 @@ footer {
 	.navbar .navbar-collapse .navbar-nav {
 		flex-direction: row;
 		justify-content: center;
-	}
-	.navbar .navbar-collapse .navbar-nav a {
-		color: #fff;
 	}
 	.navbar .navbar-collapse .navbar-nav .nav-item.active a,
 	.navbar .navbar-collapse .navbar-nav .nav-item:hover a	{
@@ -194,6 +188,20 @@ footer {
 	}
 }
 /* End Media Navbar */
+
+/* Navbar Special Styles for Main Page */
+header .navbar .navbar-toggler-icon {
+	background-image: url(../img/menu.png);
+}
+@media (max-width: 991px) {
+	header .navbar {
+		background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+	}
+	header .navbar .navbar-collapse .navbar-nav a {
+		color: #fff;
+	}
+}
+/* End Navbar Special Styles for Main Page */
 
 /* Header */
 header {
@@ -550,3 +558,37 @@ footer .come-to-us {
 	}
 }
 /* End Media Footer */
+
+/* Price Page */
+.price-page h2 {
+/*	font-size: 1.2rem;*/
+	margin-bottom: 3rem;
+}
+.price-page .services-item {
+	border: none;
+}
+.price-page table {
+	margin-bottom: 3rem;
+}
+.price-page table tr td:first-child {
+	text-align: left;
+}
+.price-page table tr td:last-child {
+	text-align: right;
+}
+.price-page .attention {
+	position: relative;
+	padding: 1.5rem 0;
+	font-size: 0.8rem;
+}
+.price-page .attention:before {
+	position: absolute;
+	content: "";
+	display: block;
+	background-color: var(--accent-color);
+	width: 100px;
+	height: 1px;
+	left: calc(50% - 50px);
+	top: 0;
+}
+/* End Price Page */

@@ -2,6 +2,7 @@
 :root {
 	--accent-color: #e40613;
 	--accent-color-dark: #b90510;
+	--accent-color-light: #e23e48;
 	--dark-grey: #212020;
 	--medium-grey: #2e2d2d;
 	--light-grey: #838080;
@@ -515,6 +516,9 @@ footer .navbar-brand {
 footer a {
 	color: inherit;
 }
+footer a:hover {
+	color: #fff;
+}
 footer .navbar-nav a {
 	color: inherit;
 	padding: 0.2rem 0.5rem;
@@ -592,3 +596,185 @@ footer .come-to-us {
 	top: 0;
 }
 /* End Price Page */
+
+/* Posts Page */
+.posts-item {
+	padding: 3rem 1rem;
+}
+.posts-page .pagination {
+	border-radius: 0;
+}
+.posts-page .pagination a {
+	color: var(--accent-color);
+}
+/* End Posts Page */
+
+/* Post Page */
+.post-page h2 {
+	font-size: 1.6rem;
+	color: var(--accent-color);
+}
+.post-page h3 {
+	font-size: 1.4rem;
+}
+/* End Post Page */
+
+/* Banner1 */
+.banner1 {
+	background:
+		linear-gradient(65deg, transparent 28%, rgba(33,32,32,0.7) 28%, rgba(33,32,32,0.7) 33%, var(--dark-grey) 33%, var(--dark-grey) 35%, transparent 35%, transparent 38%, var(--dark-grey) 38%),
+		linear-gradient(115deg, transparent 28%, rgba(33,32,32,0.7) 28%, rgba(33,32,32,0.7) 33%, var(--dark-grey) 33%, var(--dark-grey) 35%, transparent 35%, transparent 38%, var(--dark-grey) 38%),
+		url(../img/cardans.jpg);
+	background-size: auto 300px;
+	background-repeat: no-repeat;
+	background-position: left bottom 150px, left top 150px, left top;
+	min-height: 300px;
+	padding-left: 50%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-right: 3rem;
+	color: #fff;
+}
+.banner1 .banner1-offer span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem
+}
+.banner1 .btn {
+	background-color: var(--accent-color);
+	color: #fff;
+	border-radius: 0;
+	position: relative;
+}
+.banner1 .btn:hover {
+	background-color: var(--accent-color-dark);
+}
+/* End Banner1 */
+
+/* Media Banner1 */
+@media (max-width: 575px) {
+	.banner1 {
+		background:
+		linear-gradient(165deg, transparent 28%, rgba(33,32,32,0.7) 28%, rgba(33,32,32,0.7) 33%, var(--dark-grey) 33%, var(--dark-grey) 35%, transparent 35%, transparent 38%, var(--dark-grey) 38%),
+		linear-gradient(195deg, transparent 28%, rgba(33,32,32,0.7) 28%, rgba(33,32,32,0.7) 33%, var(--dark-grey) 33%, var(--dark-grey) 35%, transparent 35%, transparent 38%, var(--dark-grey) 38%),
+		url(../img/cardans.jpg);
+	background-size: 50%, 50%, auto 300px;
+	background-repeat: no-repeat;
+	background-position: right top 50px, left top 50px, top;
+	min-height: 300px;
+	padding-top: 60%;
+	padding-left: 3rem;
+	padding-bottom: 3rem;
+	padding-right: 3rem;
+	}
+}
+@media (max-width: 450px) {
+	.banner1 {
+		padding-top: 70%;
+	}
+}
+@media (max-width: 400px) {
+	.banner1 {
+		padding-top: 90%;
+	}
+}
+@media (max-width: 350px) {
+	.banner1 {
+		padding-top: 110%;
+	}
+}
+/* End Media Banner1 */
+
+/* Banner2 */
+.banner2 {
+	background: 
+		linear-gradient(250deg, transparent 90%, var(--accent-color-dark) 90%),
+		linear-gradient(230deg, transparent 80%, rgba(255,255,255,0.1) 80%),
+		linear-gradient(-230deg, transparent 70%, var(--accent-color) 70%),
+		linear-gradient(200deg, transparent 50%, var(--accent-color-dark) 50%),
+		url(../img/consult.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	min-height: 400px;
+	padding-top: 100%;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+	padding-right: 2rem;
+	color: #fff;
+}
+.banner2 a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+/* End Banner2 */
+
+/* Media Banner2 */
+@media (max-width: 1199px) {
+	.banner2 {
+		background: 
+		linear-gradient(250deg, transparent 90%, var(--accent-color-dark) 90%),
+		linear-gradient(230deg, transparent 80%, rgba(255,255,255,0.1) 80%),
+		linear-gradient(-230deg, transparent 65%, var(--accent-color) 65%),
+		linear-gradient(200deg, transparent 45%, var(--accent-color-dark) 45%),
+		url(../img/consult.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center top;
+	}
+}
+@media (max-width: 991px) {
+	.banner2 {
+		background: 
+			linear-gradient(160deg, transparent 90%, var(--accent-color-dark) 90%),
+			linear-gradient(140deg, transparent 80%, rgba(255,255,255,0.1) 80%),
+			linear-gradient(-335deg, transparent 60%, var(--accent-color) 60%),
+			linear-gradient(120deg, transparent 40%, var(--accent-color-dark) 40%),
+			url(../img/consult.jpg),
+			#fdfdfd;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left top;
+		padding-left: 40%;
+		padding-top: 2rem;
+		min-height: 200px;
+	}
+}
+@media (max-width: 575px) {
+	.banner2 {
+		background: 
+		linear-gradient(250deg, transparent 90%, var(--accent-color-dark) 90%),
+		linear-gradient(230deg, transparent 80%, rgba(255,255,255,0.1) 80%),
+		linear-gradient(-230deg, transparent 75%, var(--accent-color) 75%),
+		linear-gradient(200deg, transparent 55%, var(--accent-color-dark) 55%),
+		url(../img/consult.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center top;
+		min-height: 400px;
+		padding-top: 70%;
+		padding-left: 2rem;
+	}
+	.banner2 p:nth-child(1),
+	.banner2 p:nth-child(2) {
+		display: inline-block;
+	}
+}
+@media (max-width: 450px) {
+	.banner2 {
+		padding-top: 80%;
+	}
+}
+@media (max-width: 400px) {
+	.banner2 {
+		padding-top: 90%;
+	}
+}
+@media (max-width: 350px) {
+	.banner2 {
+		padding-top: 100%;
+	}
+}
+/* End Media Banner2 */

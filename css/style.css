@@ -56,6 +56,14 @@ footer {
 }
 /* End General */
 
+/* Modal */
+.order-modal .btn {
+	background-color: var(--accent-color);
+	color: #fff;
+	border-radius: 0;
+}
+/* End Modal */
+
 /* Navbar */
 .navbar {
 	padding: 0;
